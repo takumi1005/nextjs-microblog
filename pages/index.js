@@ -30,17 +30,17 @@ export default function Home({ allPostsData }) {
 				<div className={styles.grid}>
 					{allPostsData.map(({ id, title, date, thumbnail }) => (
 						<article key={id}>
-							<Link href={`/possts/${id}`}>
+							<Link href={`/posts/${id}`}>
 								<img
 									src={`${thumbnail}`}
 									className={styles.thumbnailImage}
 								/>
 							</Link>
 							<Link
-								href={`/possts/${id}`}
+								href={`/posts/${id}`}
 								className={utilStyle.boldText}
 							>
-								SSGとSSRの使い分けの場面はいつなのか？
+								{title}
 							</Link>
 							<br />
 							<small className={utilStyle.lightText}>
