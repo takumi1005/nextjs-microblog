@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
-import { getPostsData } from "../lib/posts";
+import { getPostsData } from "../lib/post";
 import styles from "../styles/Home.module.css";
 import utilStyle from "../styles/utils.module.css";
 
